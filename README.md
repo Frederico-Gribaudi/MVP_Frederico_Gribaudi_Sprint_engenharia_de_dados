@@ -86,9 +86,9 @@ Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum er
 -Checar se existem pontos negativos ou maiores que 114
 -Checar se existem valores nulos
 
-# Qual o melhor jogador do período?
+# Respondendo as perguntas sobre artilharia
 
-O maior artilheiro do período foi Ciro Immobile, com 201 gols, uma média de gols de 0,57 gols por partida e tendo sido o artilheiro em 4 temporadas. As respostas das demais perguntas podem ser encontradas no notebook.
+O maior artilheiro do período foi **Ciro Immobile**, com 201 gols, uma média de gols de 0,57 gols por partida e tendo sido o artilheiro em 4 temporadas. As respostas das demais perguntas podem ser encontradas no notebook.
 
-# Qual o melhor time do período?
-O melhor time do período foi a Juventus, acumulando um total de pontos de 1149, ganhando 9 títulos no período, com um percentual de vitórias de 66%, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014.  As respostas das demais perguntas podem ser encontradas no notebook.
+# Respondendo as perguntas sobre campeonatos?
+O melhor time do período foi a **Juventus**, acumulando um total de pontos de 1149, ganhando 9 títulos no período, com um percentual de vitórias de 66%, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014.  As respostas das demais perguntas podem ser encontradas no notebook.
