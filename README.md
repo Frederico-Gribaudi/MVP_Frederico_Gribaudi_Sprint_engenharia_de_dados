@@ -2,22 +2,22 @@
 
 # Sumário
 
-1. [Objetivo](#objetivo)
-2. [Coleta dos dados](#coleta-dos-dados)
-3. [Modelagem](#modelagem)
-4. [Catálogo de dados](#catálogo-de-dados)
-5. [ETL tabela de artilheiros](#etl-tabela-de-artilheiros)
-6. [ETL tabela dos campeonatos](#etl-tabela-dos-campeonatos)
-7. [Análise da qualidade dos dados de artilharia importados](#análise-da-qualidade-dos-dados-de-artilharia-importados)
-8. [Análise da qualidade dos dados dos campeonatos importados](#análise-da-qualidade-dos-dados-dos-campeonatos-importados)
-9. [Respondendo as perguntas sobre artilharia](#respondendo-as-perguntas-sobre-artilharia)
-10. [Respondendo as perguntas sobre campeonatos](#respondendo-as-perguntas-sobre-campeonatos)
+1. Objetivo
+2. Coleta dos dados
+3. Modelagem
+4. Catálogo de dados
+5. ETL tabela de artilheiros
+6. ETL tabela dos campeonatos
+7. Análise da qualidade dos dados de artilharia importados
+8. Análise da qualidade dos dados dos campeonatos importados
+9. Respondendo as perguntas sobre artilharia
+10. Respondendo as perguntas sobre campeonatos
 
 # Objetivo
 
 O objetivo deste trabalho é descobrir qual o melhor time e os melhores jogadores do campeonato italiano desde 2010. Para isso será necessário encontrar algum database ou extrair informações de sites especializados em estatísticas de futebol.
 
-# Perguntas a serem respondidas:
+**Perguntas a serem respondidas:**
 
 - Quais os jogadores com mais gols?
 - Quais os artilheiros de cada temporada?
@@ -66,29 +66,30 @@ O ETL dos dados dos artilheiros consistiu em extrair as informações do site tr
 # Análise da qualidade dos dados de artilharia importados
 
 Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum erro foi encontrado nos seguintes testes:
--Checar se existem jogadores repetidos na mesma temporada
--Checar partidas maiores que 38 ou negativas 
--Checar gols negativos
--Checar valores nulos
--Checar valores iguais a 0
+- Checar se existem jogadores repetidos na mesma temporada
+- Checar partidas maiores que 38 ou negativas 
+- Checar gols negativos
+- Checar valores nulos
+- Checar valores iguais a 0
 
 # Análise da qualidade dos dados dos campeonatos importados
 
 Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum erro foi encontrado nos seguintes testes:
--Checar se existem posições negativas ou maiores que 20
--Checar times repetidos na mesma temporada
--Checar se existem jogos diferentes de 38
--Checar se existem vitórias negativas ou maiores do que 38
--Checar se existem empates negativas ou maiores do que 38
--Checar se existem derrotas negativas ou maiores do que 38
--Checar gols pro negativos
--Checar gols contra negativos
--Checar se existem pontos negativos ou maiores que 114
--Checar se existem valores nulos
+- Checar se existem posições negativas ou maiores que 20
+- Checar times repetidos na mesma temporada
+- Checar se existem jogos diferentes de 38
+- Checar se existem vitórias negativas ou maiores do que 38
+- Checar se existem empates negativos ou maiores do que 38
+- Checar se existem derrotas negativas ou maiores do que 38
+- Checar gols pro negativos
+- Checar gols contra negativos
+- Checar se existem pontos negativos ou maiores que 114
+- Checar se existem valores nulos
 
 # Respondendo as perguntas sobre artilharia
 
 O maior artilheiro do período foi **Ciro Immobile**, com 201 gols, uma média de gols de 0,57 gols por partida e tendo sido o artilheiro em 4 temporadas. As respostas das demais perguntas podem ser encontradas no notebook.
 
-# Respondendo as perguntas sobre campeonatos?
-O melhor time do período foi a **Juventus**, acumulando um total de pontos de 1149, ganhando 9 títulos no período, com um percentual de vitórias de 66%, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014.  As respostas das demais perguntas podem ser encontradas no notebook.
+# Respondendo as perguntas sobre campeonatos
+
+O melhor time do período foi a **Juventus**, acumulando um total de pontos de 1149, ganhando 9 títulos no período, com um percentual de vitórias de 66%, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014. As respostas das demais perguntas podem ser encontradas no notebook.
