@@ -58,7 +58,7 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 ---
 # 3. Modelagem
 
-A ideia original era de criar um modelo estrela no qual eu teria uma tabela com os dados dos times que seriam chaves primárias de outras tabelas com informações de partidas, campeonatos, jogadores e valor de mercado. Durante o web scraping, infelizmente, não consegui extrair da tabela de artilheiros as colunas nacionalidade e time, logo tive que adotar outra modelagem, e optei por seguir com 2 tabelas flat que não se comunicam, uma com artilheiros e outra com campeonatos.
+A ideia original era de criar um modelo estrela no qual eu teria uma tabela com os dados dos times que seriam chaves primárias de outras tabelas com informações de partidas, campeonatos, jogadores e valor de mercado. Durante o web scraping, infelizmente, não consegui extrair da tabela de artilheiros as colunas nacionalidade e time, logo tive que adotar outra modelagem, de **Data Lakes**, e optei por seguir com 2 tabelas flat que não se comunicam, uma com artilheiros e outra com campeonatos.
 
 ---
 # 4. Catálogo de dados
