@@ -50,15 +50,23 @@ O objetivo deste trabalho é descobrir qual o melhor time e os melhores jogadore
 
 Não foi possível encontrar nenhuma base de dados gratuita com as informações necessárias, portanto optei por extrair essas informações de um site com excelente reputação pela veracidade de suas estatísticas o www.transfermarkt.com.
 
-Essa busca foi dividida em duas partes: a primeira buscando as tabelas com as estatísticas dos jogadores, nessa etapa vi que não existiam todas as estatísticas para uma análise de diferentes tipos de jogadores, a única característica de livre acesso era a quantidade de gols feitos e as próprias tabelas de classificação de cada temporada, como ambas tinham URLs diferentes, foi necessário criar dois scripts em python para fazer o web scraping.
+Essa busca foi dividida em duas partes: 
 
-Segue abaixo o link do notebook original, onde todo o trabalho foi realizado:
+i) buscando as tabelas com as estatísticas dos jogadores: nessa etapa, vi que não existiam todas as estatísticas para uma análise de diferentes tipos de jogadores. A única característica de livre acesso era a quantidade de gols feitos. 
+
+ii) buscando as próprias tabelas de classificação de cada temporada.
+
+Como ambas tinham URLs diferentes, foi necessário criar dois scripts em python para fazer o web scraping.
+
+Segue o link do notebook original, onde todo o trabalho foi realizado:
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1741214472309159/3928396909524781/4214321683267064/latest.html
 
 ---
 # 3. Modelagem
 
-A ideia original era de criar um modelo estrela no qual eu teria uma tabela com os dados dos times que seriam chaves primárias de outras tabelas com informações de partidas, campeonatos, jogadores e valor de mercado. Durante o web scraping, infelizmente, não consegui extrair da tabela de artilheiros as colunas nacionalidade e time, logo tive que adotar outra modelagem, de **Data Lakes**, e optei por seguir com 2 tabelas flat que não se comunicam, uma com artilheiros e outra com campeonatos.
+A ideia original era de criar um modelo estrela, no qual eu teria uma tabela com os dados dos times que seriam chaves primárias de outras tabelas com informações de partidas, campeonatos, jogadores e valor de mercado. 
+
+Durante o web scraping, infelizmente, não consegui extrair da tabela de artilheiros as colunas nacionalidade e time, logo tive que adotar outra modelagem, de **Data Lakes**, optando por seguir com 2 tabelas flat que não se comunicam: uma com artilheiros e outra com campeonatos.
 
 ---
 # 4. Catálogo de dados
@@ -74,33 +82,33 @@ As propriedades estão divididas da seguinte forma:
 
 O ETL dos dados dos artilheiros consistiu em:
 
-  1. extrair as informações do site transfermarkt
-  2. importar os arquivos CSV no databricks community
-  3. ajustar as propriedades definindo o tipo de entrada de cada propriedade
-  4. renomear a coluna posição para "posicao" para evitar problemas com algumas consultas SQL feitas
-  5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
-  6. juntar todos os CSV em uma única tabela de artilheiros
+  1. extrair as informações do site transfermarkt;
+  2. importar os arquivos CSV no databricks community;
+  3. ajustar as propriedades definindo o tipo de entrada de cada propriedade;
+  4. renomear a coluna posição para "posicao" para evitar problemas com algumas consultas SQL feitas;
+  5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV,
+  6. juntar todos os CSV em uma única tabela de artilheiros.
 
 ---
 # 6. ETL tabela de campeonatos
 
 O ETL dos dados dos campeonatos consistiu em:
-1. extrair as informações do site transfermarkt
-2. importar os arquivos CSV no databricks community
-3. ajustar as propriedades definindo o tipo de entrada de cada propriedade
-4. renomear a coluna vitórias para "vitorias" para evitar problemas com algumas consultas SQL feitas
-5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
-6. juntar todos os CSV em uma única tabela de campeonatos
+1. extrair as informações do site transfermarkt;
+2. importar os arquivos CSV no databricks community;
+3. ajustar as propriedades definindo o tipo de entrada de cada propriedade;
+4. renomear a coluna vitórias para "vitorias" para evitar problemas com algumas consultas SQL feitas;
+5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV,
+6. juntar todos os CSV em uma única tabela de campeonatos.
 
 ---
 # 7. Análise da qualidade dos dados de artilharia importados
 
-Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum erro foi encontrado nos seguintes testes:
-- Checar se existem jogadores repetidos na mesma temporada
-- Checar partidas maiores que 38 ou negativas 
-- Checar gols negativos
-- Checar valores nulos
-- Checar valores iguais a 0
+Nesta seção foram testados os valores mínimos e máximos da tabela. Nenhum erro foi encontrado nos seguintes testes:
+- Checar se existem jogadores repetidos na mesma temporada;
+- Checar partidas maiores que 38 ou negativas;
+- Checar gols negativos;
+- Checar valores nulos,
+- Checar valores iguais a 0.
 
 Mais detalhes das consultas feitas podem ser observadas em https://github.com/Frederico-Gribaudi/MVP_Frederico_Gribaudi_Sprint_engenharia_de_dados/blob/main/MVP%20Frederico%20Gribaudi_sprint_1.ipynb
 
@@ -108,16 +116,16 @@ Mais detalhes das consultas feitas podem ser observadas em https://github.com/Fr
 # 8. Análise da qualidade dos dados dos campeonatos importados
 
 Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum erro foi encontrado nos seguintes testes:
-- Checar se existem posições negativas ou maiores que 20
-- Checar times repetidos na mesma temporada
-- Checar se existem jogos diferentes de 38
-- Checar se existem vitórias negativas ou maiores do que 38
-- Checar se existem empates negativos ou maiores do que 38
-- Checar se existem derrotas negativas ou maiores do que 38
-- Checar gols pro negativos
-- Checar gols contra negativos
-- Checar se existem pontos negativos ou maiores que 114
-- Checar se existem valores nulos
+- Checar se existem posições negativas ou maiores que 20;
+- Checar times repetidos na mesma temporada;
+- Checar se existem jogos diferentes de 38;
+- Checar se existem vitórias negativas ou maiores do que 38;
+- Checar se existem empates negativos ou maiores do que 38;
+- Checar se existem derrotas negativas ou maiores do que 38;
+- Checar gols pro negativos;
+- Checar gols contra negativos;
+- Checar se existem pontos negativos ou maiores que 114,
+- Checar se existem valores nulos.
 
 Mais detalhes das consultas feitas podem ser observadas em https://github.com/Frederico-Gribaudi/MVP_Frederico_Gribaudi_Sprint_engenharia_de_dados/blob/main/MVP%20Frederico%20Gribaudi_sprint_1.ipynb
 
@@ -126,7 +134,7 @@ Mais detalhes das consultas feitas podem ser observadas em https://github.com/Fr
 
 ## **Quais os jogadores com mais gols?**
 
-A lista abaixo está apresentando os 20 jogadores que fizeram mais gols somando todas as temporadas:
+A lista abaixo está apresentando os 20 jogadores que fizeram mais gols, somando todas as temporadas:
 ![image](https://github.com/user-attachments/assets/57c0c818-59ba-4447-9020-6c93e06a14cf)
 
 ## **Quais os artilheiros de cada temporada?**
@@ -165,29 +173,29 @@ Segue abaixo a lista de artilheiros por posição:
 
 ![image](https://github.com/user-attachments/assets/a11ead6f-da2d-4ca8-92a7-47dcd4ed244a)
 
-O destaque negativo é **Lucas Boyé**, que como **centroavante** teve uma média de **0.03** gols por partida, marcando apenas **1** gol em **30** partidas, lembrando que nas listas estão apenas os jogadores que marcaram pelo menos um gol, logo pode existir algum artilheiro que não fez nenhum gol.
+O destaque negativo é **Lucas Boyé** que, como **centroavante**, teve uma média de **0.03** gols por partida, marcando apenas **1** gol em **30** partidas. Lembrando que, nas listas estão apenas os jogadores que marcaram pelo menos um gol, logo pode existir algum centroavante que não fez nenhum gol.
 
 ## **Qual o artilheiro de cada time por temporada?**
 
-Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt, não foi possível criar uma coluna pois os nomes dos times eram apenas imagens e não uma string para ser copiada.
+Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt não foi possível criar uma coluna, pois os nomes dos times eram apenas imagens e não uma string para ser copiada.
 
 ## **Quem foi o maior artilheiro italiano?**
 
-Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt, não foi possível criar uma coluna pois as nacionalidades eram apenas imagens e não uma string para ser copiada, além de existirem jogadores com mais de uma nacionalidade.
+Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt não foi possível criar uma coluna, pois as nacionalidades eram apenas imagens e não uma string para ser copiada, além de existirem jogadores com mais de uma nacionalidade.
 
 ## **Quem foi o maior artilheiro brasileiro?**
 
-Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt, não foi possível criar uma coluna pois as nacionalidades eram apenas imagens e não uma string para ser copiada, além de existirem jogadores com mais de uma nacionalidade.
+Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt não foi possível criar uma coluna, pois as nacionalidades eram apenas imagens e não uma string para ser copiada, além de existirem jogadores com mais de uma nacionalidade.
 
 ---
 # 10. Conclusão sobre o melhor jogador
-Como nas tabelas importadas não existiam outras características como por exemplo assistências, dribles e distância percorrida, o critério para a escolha foi subjetivo. O jogador escolhido como melhor do período foi **Ciro Immobile**, pois realizou **201** gols, com uma média de **0,57** gols por partida e tendo sido o artilheiro em **4** temporadas. 
+Como nas tabelas importadas não existiam outras características como, por exemplo, assistências, dribles e distância percorrida, o critério para a escolha foi subjetivo. O jogador escolhido como melhor do período foi **Ciro Immobile**, pois realizou **201** gols, com uma média de **0,57** gols por partida, tendo sido o artilheiro em **4** temporadas. 
 
 ---
 # 11. Respondendo as perguntas sobre campeonatos
 ## **Qual time com maior quantidade de pontos?**
 
-A **Juventus** fez um total de **1149** pontos no perído, com um total de **350** vitórias e **109** empates, importante levar em consideração que a quantidade de pontos não representa o que seria normalmente esperado, visto que 350 * 3 + 109 = **1159**. Na temporada **2022-2023** houve uma penalização de **10** pontos, devido a problemas financeiros em seus balanços.
+A **Juventus** fez um total de **1149** pontos no perído, com um total de **350** vitórias e **109** empates.Importante levar em consideração que a quantidade de pontos não representa o que seria normalmente esperado, visto que 350 * 3 + 109 = **1159**. Na temporada **2022-2023** houve uma penalização de **10** pontos, devido a problemas financeiros em seus balanços.
 
 ## **Qual time com maior % de vitórias?**
 
@@ -203,7 +211,7 @@ O destaque negativo é a **Udinese** que fez menos gols dentre os times que part
 
 ## **Qual time sofreu menos gols?**
 
-A **Juventus** sofreu **421** gols no período, o resultado inicial trouxe **21** times que sofreram menos gols, porém reparei que a quantidade de jogos era muito diferente, visto que esses times caíram para a segunda divisão, alguns nunca mais subiram, outros subiram e desceram, portanto apliquei um novo filtro, para levar em consideração apenas os times que participaram de todas as temporadas, ou seja **532** jogos.
+A **Juventus** sofreu **421** gols no período. O resultado inicial trouxe **21** times que sofreram menos gols, porém reparei que a quantidade de jogos era muito diferente, visto que esses times: caíram para a segunda divisão, alguns nunca mais subiram, outros subiram e desceram... portanto apliquei um novo filtro para levar em consideração apenas os times que participaram de todas as temporadas, ou seja **532** jogos.
 
 ## **Qual o maior saldo de gols numa temporada?**
 
@@ -235,7 +243,7 @@ A **Juventus** foi campeã **9** vezes, de forma consecutiva, desde **2011-2012*
 ---
 # 12. Conclusão sobre o melhor time
 
-O melhor time do período foi a **Juventus**, acumulando um total de pontos de **1149**, ganhando **9** títulos no período, com um percentual de vitórias de aproximadamente **66%**, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014. As respostas das demais perguntas podem ser encontradas no notebook.
+O melhor time do período foi a **Juventus**: acumulando um total de pontos de **1149**, ganhando **9** títulos no período, com percentual de vitórias de aproximadamente **66%**, com a defesa menos vazada dentre os times que participaram de todas as temporadas, campeã invicta em 2011-2012, teve a maior quantidade de pontos em uma temporada, 102 na temporada 2013-2014.
 
 ---
 # 13. Autoavaliação
