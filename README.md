@@ -177,7 +177,7 @@ Essa pergunta não pode ser respondida, pois durante a extração dos dados de j
 
 ---
 # 10. Conclusão sobre o melhor jogador
-O maior artilheiro do período foi **Ciro Immobile**, com **201** gols, uma média de **0,57** gols por partida e tendo sido o artilheiro em **4** temporadas. 
+Como nas tabelas importadas não existiam outras características como por exemplo assistências, dribles e distância percorrida, o critério para a escolha foi subjetivo. O jogador escolhido como melhor do período foi **Ciro Immobile**, pois realizou **201** gols, com uma média de **0,57** gols por partida e tendo sido o artilheiro em **4** temporadas. 
 
 ---
 # 11. Respondendo as perguntas sobre campeonatos
