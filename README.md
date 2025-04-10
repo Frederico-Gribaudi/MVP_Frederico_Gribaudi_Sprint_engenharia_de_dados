@@ -80,7 +80,7 @@ O ETL dos dados dos artilheiros consistiu em:
   5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
 
 ---
-# 5. ETL tabela de artilheiros
+# 6. ETL tabela de campeonatos
 
 O ETL dos dados dos campeonatos consistiu em:
 1. extrair as informações do site transfermarkt
