@@ -207,7 +207,7 @@ A **Juventus** sofreu **421** gols no período, o resultado inicial trouxe **21*
 
 ## **Qual o maior saldo de gols numa temporada?**
 
-Na temporada **2023-2024** a **Inter** fez 89 gols e sofreu 22, representando um saldo de gols de **67**.
+Na temporada **2023-2024** a **Inter** fez **89** gols e sofreu **22**, representando um saldo de gols de **67**.
 
 ## **Quais os campeões de cada temporada?**
 
@@ -222,20 +222,20 @@ Não houve nenhum time que ganhou todos os jogos.
 
 ## **Teve algum campeão invicto?**
 
-Na temporada **2011-2012** a **Juventus** foi campeã invícta, com 23 vitórias e 15 empates.
+Na temporada **2011-2012** a **Juventus** foi campeã invícta, com **23** vitórias e **15** empates.
 
 ## **Qual time ganhou com a maior quantidade de pontos em uma temporada?**
 
-Na temporada **2013-2014** a **Juventus** ganhou 33 partidas e empatou 3, totalizando **102** pontos.
+Na temporada **2013-2014** a **Juventus** ganhou **33** partidas e empatou **3**, totalizando **102** pontos.
 
 ## **Qual time mais vezes campeão?**
 
-A **Juventus** foi campeã 9 vezes, de forma consecutiva, desde 2011-2012 até 2019-2020.
+A **Juventus** foi campeã **9** vezes, de forma consecutiva, desde **2011-2012** até **2019-2020**.
 
 ---
 # 12. Conclusão sobre o melhor time
 
-O melhor time do período foi a **Juventus**, acumulando um total de pontos de 1149, ganhando 9 títulos no período, com um percentual de vitórias de aproximadamente 66%, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014. As respostas das demais perguntas podem ser encontradas no notebook.
+O melhor time do período foi a **Juventus**, acumulando um total de pontos de **1149**, ganhando **9** títulos no período, com um percentual de vitórias de aproximadamente **66%**, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014. As respostas das demais perguntas podem ser encontradas no notebook.
 
 ---
 # 13. Autoavaliação
