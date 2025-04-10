@@ -196,7 +196,7 @@ O destaque negativo é a **Udinese** que fez menos gols dentre os times que part
 
 ## **Qual time sofreu menos gols?**
 
-A **Juventus** sofreu **421** gols no período, o resultado inicial trouxe **21** times que sofreram menos gols, porém reparei que a quantidade de partidas era muito diferente, visto que esses times caíram para a segunda divisão, alguns nunca mais subiram, outros subiram e desceram, portanto apliquei um novo filtro, para levar em consideração apenas os times que participaram de todas as temporadas, ou seja 532 jogos.
+A **Juventus** sofreu **421** gols no período, o resultado inicial trouxe **21** times que sofreram menos gols, porém reparei que a quantidade de jogos era muito diferente, visto que esses times caíram para a segunda divisão, alguns nunca mais subiram, outros subiram e desceram, portanto apliquei um novo filtro, para levar em consideração apenas os times que participaram de todas as temporadas, ou seja **532** jogos.
 
 ## **Qual o maior saldo de gols numa temporada?**
 
