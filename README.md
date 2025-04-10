@@ -102,6 +102,8 @@ Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum er
 - Checar valores nulos
 - Checar valores iguais a 0
 
+Mais detalhes das consultas feitas podem ser observadas em https://github.com/Frederico-Gribaudi/MVP_Frederico_Gribaudi_Sprint_engenharia_de_dados/blob/main/MVP%20Frederico%20Gribaudi_sprint_1.ipynb
+
 ---
 # 8. Análise da qualidade dos dados dos campeonatos importados
 
@@ -116,6 +118,8 @@ Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum er
 - Checar gols contra negativos
 - Checar se existem pontos negativos ou maiores que 114
 - Checar se existem valores nulos
+
+Mais detalhes das consultas feitas podem ser observadas em https://github.com/Frederico-Gribaudi/MVP_Frederico_Gribaudi_Sprint_engenharia_de_dados/blob/main/MVP%20Frederico%20Gribaudi_sprint_1.ipynb
 
 ---
 # 9. Respondendo as perguntas sobre artilharia
