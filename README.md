@@ -1,22 +1,24 @@
 # MVP_Frederico_Gribaudi_Sprint_engenharia_de_dados
 
-# Sumário
-
-1. [Objetivo](#1-objetivo)  
-2. [Coleta dos dados](#2-coleta-dos-dados)  
-3. [Modelagem](#3-modelagem)  
-4. [Catálogo de dados](#4-catálogo-de-dados)  
-5. [ETL tabela de artilheiros](#5-etl-tabela-de-artilheiros)  
-6. [ETL tabela dos campeonatos](#6-etl-tabela-dos-campeonatos)  
-7. [Análise da qualidade dos dados de artilharia importados](#7-análise-da-qualidade-dos-dados-de-artilharia-importados)  
-8. [Análise da qualidade dos dados dos campeonatos importados](#8-análise-da-qualidade-dos-dados-dos-campeonatos-importados)  
-9. [Respondendo as perguntas sobre artilharia](#9-respondendo-as-perguntas-sobre-artilharia)  
-10. [Conclusão sobre o melhor jogador](#10-conclusão-sobre-o-melhor-jogador)  
-11. [Respondendo as perguntas sobre campeonatos](#11-respondendo-as-perguntas-sobre-campeonatos)  
-12. [Conclusão sobre o melhor time](#12-conclusão-sobre-o-melhor-time)  
-13. [Autoavaliação](#13-autoavaliação)
 ---
-# 1. Objetivo
+
+## 📚 Sumário
+
+1. [🎯 Objetivo](#1-objetivo)  
+2. [📥 Coleta dos dados](#2-coleta-dos-dados)  
+3. [🧱 Modelagem](#3-modelagem)  
+4. [📊 Catálogo de dados](#4-catálogo-de-dados)  
+5. [⚙️ ETL tabela de artilheiros](#5-etl-tabela-de-artilheiros)  
+6. [⚙️ ETL tabela dos campeonatos](#6-etl-tabela-dos-campeonatos)  
+7. [🧪 Análise da qualidade dos dados de artilharia importados](#7-análise-da-qualidade-dos-dados-de-artilharia-importados)  
+8. [🧪 Análise da qualidade dos dados dos campeonatos importados](#8-análise-da-qualidade-dos-dados-dos-campeonatos-importados)  
+9. [❓ Respondendo as perguntas sobre artilharia](#9-respondendo-as-perguntas-sobre-artilharia)  
+10. [🏅 Conclusão sobre o melhor jogador](#10-conclusão-sobre-o-melhor-jogador)  
+11. [❓ Respondendo as perguntas sobre campeonatos](#11-respondendo-as-perguntas-sobre-campeonatos)  
+12. [🥇 Conclusão sobre o melhor time](#12-conclusão-sobre-o-melhor-time)  
+13. [🧠 Autoavaliação](#13-autoavaliação)
+---
+## 1. 🎯 Objetivo
 
 O objetivo deste trabalho é descobrir qual o melhor time e os melhores jogadores do campeonato italiano desde 2010. Para isso será necessário encontrar algum database ou extrair informações de sites especializados em estatísticas de futebol.
 
@@ -42,7 +44,7 @@ O objetivo deste trabalho é descobrir qual o melhor time e os melhores jogadore
 - Qual time ganhou com a maior quantidade de pontos em uma temporada?
 - Qual time mais vezes campeão?
 ---
-# 2. Coleta dos dados
+## 2. 📥 Coleta dos dados
 
 Não foi possível encontrar nenhuma base de dados gratuita com as informações necessárias, portanto optei por extrair essas informações de um site com excelente reputação pela veracidade de suas estatísticas o www.transfermarkt.com.
 
@@ -52,12 +54,12 @@ Segue abaixo o link do notebook original, onde todo o trabalho foi realizado:
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1741214472309159/3928396909524781/4214321683267064/latest.html
 
 ---
-# 3. Modelagem
+## 3. 🧱 Modelagem
 
 A ideia original era de criar um modelo estrela no qual eu teria uma tabela com os dados dos times que seriam chaves primárias de outras tabelas com informações de partidas, campeonatos, jogadores e valor de mercado. Durante o web scraping, infelizmente, não consegui extrair da tabela de artilheiros as colunas nacionalidade e time, logo tive que adotar outra modelagem, e optei por seguir com 2 tabelas flat que não se comunicam, uma com artilheiros e outra com campeonatos.
 
 ---
-# 4. Catálogo de dados
+## 4. 📊 Catálogo de dados
 
 As propriedades estão divididas da seguinte forma:
 
@@ -65,7 +67,7 @@ As propriedades estão divididas da seguinte forma:
 
 
 ---
-# 5. ETL tabela de artilheiros
+## 5. ⚙️ ETL tabela de artilheiros
 
 O ETL dos dados dos artilheiros consistiu em:
 
@@ -76,7 +78,7 @@ O ETL dos dados dos artilheiros consistiu em:
   5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
 
 ---
-# 6. ETL tabela dos campeonatos
+## 5. ⚙️ ETL tabela de artilheiros
 
 O ETL dos dados dos campeonatos consistiu em:
 1. extrair as informações do site transfermarkt
@@ -86,7 +88,7 @@ O ETL dos dados dos campeonatos consistiu em:
 5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
 
 ---
-# 7. Análise da qualidade dos dados de artilharia importados
+## 7. 🧪 Análise da qualidade dos dados de artilharia importados
 
 Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum erro foi encontrado nos seguintes testes:
 - Checar se existem jogadores repetidos na mesma temporada
@@ -96,7 +98,7 @@ Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum er
 - Checar valores iguais a 0
 
 ---
-# 8. Análise da qualidade dos dados dos campeonatos importados
+## 8. 🧪 Análise da qualidade dos dados dos campeonatos importados
 
 Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum erro foi encontrado nos seguintes testes:
 - Checar se existem posições negativas ou maiores que 20
@@ -111,7 +113,7 @@ Nesta seção foram testados os valores mínimos e máximos da tabela, nenhum er
 - Checar se existem valores nulos
 
 ---
-# 9. Respondendo as perguntas sobre artilharia
+## 9. ❓ Respondendo as perguntas sobre artilharia
 
 ## **Quais os jogadores com mais gols?**
 
@@ -159,11 +161,11 @@ Essa pergunta não pode ser respondida, pois durante a extração dos dados de j
 Essa pergunta não pode ser respondida, pois durante a extração dos dados de jogadores do site transfermarkt, não foi possível criar uma coluna pois as nacionalidades eram apenas imagens e não uma string para ser copiada, além de existirem jogadores com mais de uma nacionalidade.
 
 ---
-# 10. Conclusão sobre o melhor jogador
+## 10. 🏅 Conclusão sobre o melhor jogador
 O maior artilheiro do período foi **Ciro Immobile**, com **201** gols, uma média de **0,57** gols por partida e tendo sido o artilheiro em **4** temporadas. 
 
 ---
-# 11. Respondendo as perguntas sobre campeonatos
+## 11. ❓ Respondendo as perguntas sobre campeonatos
 ## **Qual time com maior quantidade de pontos?**
 
 A **Juventus** fez um total de **1149** pontos no perído, com um total de 350 vitórias e 109 empates, importante levar em consideração que a quantidade de pontos não representa o que seria normalmente esperado, visto que 350*3 + 109 = **1159**. Na temporada **2022-2023** houve uma penalização de 10 pontos, devido a problemas financeiros em seus balanços.
@@ -208,11 +210,11 @@ Na temporada **2013-2014** a **Juventus** ganhou 33 partidas e empatou 3, totali
 A **Juventus** foi campeã 9 vezes, de forma consecutiva, desde 2011-2012 até 2019-2020.
 
 ---
-# 12. Conclusão sobre o melhor time
+## 12. 🥇 Conclusão sobre o melhor time
 
 O melhor time do período foi a **Juventus**, acumulando um total de pontos de 1149, ganhando 9 títulos no período, com um percentual de vitórias de aproximadamente 66%, com a defesa menos vazada dentre os times que participaram de todas as temporadas, foi campeã invicta em 2011-2012, teve a maior quantidade de pontos, 102 na temporada 2013-2014. As respostas das demais perguntas podem ser encontradas no notebook.
 
 ---
-# 13. Autoavaliação
+## 13. 🧠 Autoavaliação
 
 Estou extremamente satisfeito com a realização desse trabalho, apesar de não ter conseguido fazer tudo que tinha imaginado inicialmente. Tive que me dedicar bastante para conseguir obter os resultados, com muitos estudos, ajuda dos colegas no Discord, dos professores nos encontros síncronos, para conseguir entregar um trabalho que dentro das minhas capacidades, tinha um grau de desafio alto.
