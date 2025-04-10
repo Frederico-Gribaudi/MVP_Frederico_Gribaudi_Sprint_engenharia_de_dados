@@ -65,7 +65,8 @@ A ideia original era de criar um modelo estrela no qual eu teria uma tabela com 
 
 As propriedades estão divididas da seguinte forma:
 
-![image](https://github.com/user-attachments/assets/6290e01f-76a7-4de2-8eda-1ec3871233b2)
+![image](https://github.com/user-attachments/assets/c44b5915-fb4a-4645-8cda-1bde75a80b63)
+
 
 
 ---
