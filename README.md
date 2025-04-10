@@ -134,7 +134,7 @@ Segue abaixo a lista de artilharia de cada temporada:
 
 ## **Qual a maior média total de gols por partida?**
 
-**Cristiano Ronaldo** foi o jogador com uma média de gols de **0.83** , levando em consideração um número mínimo de 10 partidas jogadas. Os 4 jogadores a seguir tiveram uma média maior, porém considerei como outliers devido às poucas partidas jogadas.
+**Cristiano Ronaldo** foi o jogador com uma média de gols de **0.83** , levando em consideração um número mínimo de 10 partidas jogadas. Os 4 jogadores a seguir tiveram uma média maior, porém considerei como outliers devido às poucas partidas jogadas:
 
 **Francesco Grandolfo**, fez **3** gols em **3** partidas, com uma média de **1** gol por partida.
 
