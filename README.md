@@ -50,7 +50,7 @@ O objetivo deste trabalho é descobrir qual o melhor time e os melhores jogadore
 
 Não foi possível encontrar nenhuma base de dados gratuita com as informações necessárias, portanto optei por extrair essas informações de um site com excelente reputação pela veracidade de suas estatísticas o www.transfermarkt.com.
 
-Essa busca foi dividida em duas partes, a primeira buscando as tabelas com as estatísticas dos jogadores, nessa etapa vi que não existiam todas as estatísticas para uma análise de diferentes tipos de jogadores, a única característica de livre acesso era a quantidade de gols feitos e as próprias tabelas de classificação de cada temporada, como ambas tinham URLs diferentes, foi necessário criar dois scripts em python para fazer o web scraping.
+Essa busca foi dividida em duas partes: a primeira buscando as tabelas com as estatísticas dos jogadores, nessa etapa vi que não existiam todas as estatísticas para uma análise de diferentes tipos de jogadores, a única característica de livre acesso era a quantidade de gols feitos e as próprias tabelas de classificação de cada temporada, como ambas tinham URLs diferentes, foi necessário criar dois scripts em python para fazer o web scraping.
 
 Segue abaixo o link do notebook original, onde todo o trabalho foi realizado:
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1741214472309159/3928396909524781/4214321683267064/latest.html
