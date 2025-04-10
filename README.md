@@ -4,8 +4,8 @@
 
 ## 📚 Sumário
 
-1. [Objetivo](#1-objetivo)  
-2. [Coleta dos dados](#2-coleta-dos-dados)  
+1. [Objetivo](##1-objetivo)  
+2. [Coleta dos dados](##2-coleta-dos-dados)  
 3. [Modelagem](#3-modelagem)  
 4. [Catálogo de dados](#4-catálogo-de-dados)  
 5. [ETL tabela de artilheiros](#5-etl-tabela-de-artilheiros)  
