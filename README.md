@@ -4,19 +4,19 @@
 
 ## 📚 Sumário
 
-1. [🎯 Objetivo](#1-objetivo)  
-2. [📥 Coleta dos dados](#2-coleta-dos-dados)  
-3. [🧱 Modelagem](#3-modelagem)  
-4. [📊 Catálogo de dados](#4-catálogo-de-dados)  
-5. [⚙️ ETL tabela de artilheiros](#5-etl-tabela-de-artilheiros)  
-6. [⚙️ ETL tabela dos campeonatos](#6-etl-tabela-dos-campeonatos)  
-7. [🧪 Análise da qualidade dos dados de artilharia importados](#7-análise-da-qualidade-dos-dados-de-artilharia-importados)  
-8. [🧪 Análise da qualidade dos dados dos campeonatos importados](#8-análise-da-qualidade-dos-dados-dos-campeonatos-importados)  
-9. [❓ Respondendo as perguntas sobre artilharia](#9-respondendo-as-perguntas-sobre-artilharia)  
-10. [🏅 Conclusão sobre o melhor jogador](#10-conclusão-sobre-o-melhor-jogador)  
-11. [❓ Respondendo as perguntas sobre campeonatos](#11-respondendo-as-perguntas-sobre-campeonatos)  
-12. [🥇 Conclusão sobre o melhor time](#12-conclusão-sobre-o-melhor-time)  
-13. [🧠 Autoavaliação](#13-autoavaliação)
+1. [Objetivo](#1-objetivo)  
+2. [Coleta dos dados](#2-coleta-dos-dados)  
+3. [Modelagem](#3-modelagem)  
+4. [Catálogo de dados](#4-catálogo-de-dados)  
+5. [ETL tabela de artilheiros](#5-etl-tabela-de-artilheiros)  
+6. [ETL tabela dos campeonatos](#6-etl-tabela-dos-campeonatos)  
+7. [Análise da qualidade dos dados de artilharia importados](#7-análise-da-qualidade-dos-dados-de-artilharia-importados)  
+8. [Análise da qualidade dos dados dos campeonatos importados](#8-análise-da-qualidade-dos-dados-dos-campeonatos-importados)  
+9. [Respondendo as perguntas sobre artilharia](#9-respondendo-as-perguntas-sobre-artilharia)  
+10. [Conclusão sobre o melhor jogador](#10-conclusão-sobre-o-melhor-jogador)  
+11. [Respondendo as perguntas sobre campeonatos](#11-respondendo-as-perguntas-sobre-campeonatos)  
+12. [Conclusão sobre o melhor time](#12-conclusão-sobre-o-melhor-time)  
+13. [Autoavaliação](#13-autoavaliação)
 ---
 ## 1. 🎯 Objetivo
 
