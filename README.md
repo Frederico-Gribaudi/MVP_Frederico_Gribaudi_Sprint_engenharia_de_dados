@@ -165,7 +165,7 @@ Segue abaixo a lista de artilheiros por posição:
 
 ![image](https://github.com/user-attachments/assets/a11ead6f-da2d-4ca8-92a7-47dcd4ed244a)
 
-O destaque negativo é **Lucas Boyé**, que como **centroavante** teve uma média de **0.03** gols por partida, marcando apenas **1** gol em **30** partidas.
+O destaque negativo é **Lucas Boyé**, que como **centroavante** teve uma média de **0.03** gols por partida, marcando apenas **1** gol em **30** partidas, lembrando que nas listas estão apenas os jogadores que marcaram pelo menos um gol, logo pode existir algum artilheiro que não fez nenhum gol.
 
 ## **Qual o artilheiro de cada time por temporada?**
 
