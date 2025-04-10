@@ -134,7 +134,15 @@ Segue abaixo a lista de artilharia de cada temporada:
 
 ## **Qual a maior média total de gols por partida?**
 
-**Cristiano Ronaldo** foi o jogador com maior média de gols, levando em consideração um número mínimo de 10 partidas jogadas, para evitar que existam outliers.
+**Cristiano Ronaldo** foi o jogador com maior média de gols, levando em consideração um número mínimo de 10 partidas jogadas. Os jogadores a seguir tiveram uma média em teoria maior, porém considerei como outliers devido as poucas partidas jogadas.
+
+**Francesco Grandolfo**, fez **3** gols em **3** partidas, com uma média de **1** gol por partida.
+
+**Fabrizio Grillo**, fez **1** gol em **1** partida, com uma média de **1** gol por partida.
+
+**Davide Biraschi**, fez **1** gol em **1** partida, com uma média de **1** gol por partida.
+
+**Marco Vitiglio**, fez **1** gol em **1** partida, com uma média de **1** gol por partida.
 
 ## **Qual a maior média de gols por partida por temporada?**
 
@@ -149,6 +157,8 @@ Podemos ver com esse resultado que nem sempre o artilheiro da temporada teve a m
 Segue abaixo a lista de artilheiros por posição:
 
 ![image](https://github.com/user-attachments/assets/a11ead6f-da2d-4ca8-92a7-47dcd4ed244a)
+
+O destaque negativo é **Lucas Boyé**, que como **centroavante** teve uma média de **0.03** gols por partida, marcando apenas **1** gol em **30** partidas.
 
 ## **Qual o artilheiro de cada time por temporada?**
 
@@ -176,13 +186,17 @@ A **Juventus** fez um total de **1149** pontos no perído, com um total de 350 v
 
 A **Juventus** teve um percentual de vitórias de **65.78%** no período.
 
+O destaque negativo foi o **Pescara** que teve um percentual de vitórias de **11.84%**
+
 ## **Qual time que fez mais gols?**
 
 O **Napoli** fez **1023** gols.
 
+O destaque negativo é a **Udinese** que fez menos gols dentre os times que participaram de todos os campeonatos, marcando **658** gols.
+
 ## **Qual time sofreu menos gols?**
 
-A **Juventus** sofreu **421** gols no período, o resultado inicial trouxe outro time, porém reparei que a quantidade de partidas era muito diferente, visto que um time que caiu para a segunda divisão e nunca mais subiu, pode de fato ter sofrido menos gols, portanto apliquei um novo filtro, para levar em consideração apenas os times que participaram de todas as temporadas, ou seja 532 jogos.
+A **Juventus** sofreu **421** gols no período, o resultado inicial trouxe 21 times que sofreram menos gols, porém reparei que a quantidade de partidas era muito diferente, visto que esses times caram para a segunda divisão, alguns nunca mais subiram, outros subiram e desceram, portanto apliquei um novo filtro, para levar em consideração apenas os times que participaram de todas as temporadas, ou seja 532 jogos.
 
 ## **Qual o maior saldo de gols numa temporada?**
 
