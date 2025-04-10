@@ -193,7 +193,7 @@ A **Juventus** fez um total de **1149** pontos no perído, com um total de **350
 
 A **Juventus** teve um percentual de vitórias de **65.78%** no período.
 
-O destaque negativo foi o **Pescara** que teve um percentual de vitórias de **11.84%**
+O destaque negativo foi o **Pescara** que teve um percentual de vitórias de **11.84%**.
 
 ## **Qual time que fez mais gols?**
 
