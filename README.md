@@ -79,6 +79,7 @@ O ETL dos dados dos artilheiros consistiu em:
   3. ajustar as propriedades definindo o tipo de entrada de cada propriedade
   4. renomear a coluna posição para "posicao" para evitar problemas com algumas consultas SQL feitas
   5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
+  6. juntar todos os CSV em uma única tabela de artilheiros
 
 ---
 # 6. ETL tabela de campeonatos
@@ -89,6 +90,7 @@ O ETL dos dados dos campeonatos consistiu em:
 3. ajustar as propriedades definindo o tipo de entrada de cada propriedade
 4. renomear a coluna vitórias para "vitorias" para evitar problemas com algumas consultas SQL feitas
 5. adicionar a coluna temporada em cada tabela, que é de extrema importância visto que o script usado apenas nomeou os diferentes arquivos CSV.
+6. juntar todos os CSV em uma única tabela de campeonatos
 
 ---
 # 7. Análise da qualidade dos dados de artilharia importados
