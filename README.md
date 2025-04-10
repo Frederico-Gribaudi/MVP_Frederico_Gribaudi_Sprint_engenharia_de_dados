@@ -4,8 +4,8 @@
 
 ## 📚 Sumário
 
-1. [Objetivo](##1-objetivo)  
-2. [Coleta dos dados](##2-coleta-dos-dados)  
+1. [Objetivo](#1-objetivo)  
+2. [Coleta dos dados](#2-coleta-dos-dados)  
 3. [Modelagem](#3-modelagem)  
 4. [Catálogo de dados](#4-catálogo-de-dados)  
 5. [ETL tabela de artilheiros](#5-etl-tabela-de-artilheiros)  
@@ -18,7 +18,7 @@
 12. [Conclusão sobre o melhor time](#12-conclusão-sobre-o-melhor-time)  
 13. [Autoavaliação](#13-autoavaliação)
 ---
-## 1. 🎯 Objetivo
+# 1. Objetivo
 
 O objetivo deste trabalho é descobrir qual o melhor time e os melhores jogadores do campeonato italiano desde 2010. Para isso será necessário encontrar algum database ou extrair informações de sites especializados em estatísticas de futebol.
 
