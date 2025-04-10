@@ -4,7 +4,7 @@ Autor: Frederico Francesco Gribaudi Cardozo
 
 ---
 
-## 📚 Sumário
+# Sumário
 
 1. [Objetivo](#1-objetivo)  
 2. [Coleta dos dados](#2-coleta-dos-dados)  
